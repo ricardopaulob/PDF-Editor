@@ -39,13 +39,6 @@ namespace PDF_Editor.Utils
                             saveInfo["Keywords"] = pdfOpened.Keywords;
                             SaveCustomProperties(saveInfo, pdfOpened.CustomProperties, pdfOpened.DeleteCustomProperties);
                             stamper.MoreInfo = saveInfo;
-
-                            using (var xmpMs = new MemoryStream())
-                            {
-                                var xmp = new XmpWriter(xmpMs, saveInfo);
-                                stamper.XmpMetadata = xmpMs.ToArray();
-                                xmp.Close();
-                            }
                         }
 
                         var fileBytes = output.ToArray();

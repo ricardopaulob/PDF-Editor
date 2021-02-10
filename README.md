@@ -2,7 +2,7 @@
 Simple PDF Metadata Editor
 
 # INSTALL
-* Download and Unzip `Setup-PdfEditor-v1.0.3.zip`
+* Download and Unzip `Setup-PdfEditor-v1.0.4.zip`
 * Run `setup.exe`
 
 # SOURCE CODE
